@@ -152,6 +152,8 @@
     return [[DBAUTHAuthError alloc] initWithUserSuspended];
   } else if ([tag isEqualToString:@"other"]) {
     return [[DBAUTHAuthError alloc] initWithOther];
+  } else {
+    return [[DBAUTHAuthError alloc] initWithOther];
   }
 
   @throw([NSException
